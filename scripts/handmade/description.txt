@@ -1,0 +1,248 @@
+algorithm_cutoff_memory: '?'
+algorithm_cutoff_time: 10000.0
+algorithms_deterministic: !!python/object/apply:builtins.map
+- !!python/name:__main__.%3Clambda%3E ''
+- !!python/object/apply:builtins.iter
+  args:
+  - - cadical_hack_gb
+    - cadical_Less_UP
+    - cadical_PriPro
+    - cadical_rp
+    - cadical_sc2021
+    - cadical_SCAVEL01
+    - cleanMaple
+    - hCaD
+    - hKis
+    - kissat_bonus
+    - kissat_cf
+    - kissat_gb
+    - kissat_MAB
+    - kissat_sat_crvr_gb
+    - kissat_sc2021
+    - kissat_sc2021_sat
+    - kissat_sc2021_sweep
+    - lstech_maple
+    - Maple_MBDR_BJL6_Tier2
+    - Maple_simp21
+    - MapleSSV
+    - opsat_R21
+    - ParaFORST
+    - ParaFORST_NoMDM
+    - Relaxed_LCFTP
+    - Relaxed_LCMDCBDL_SCAVEL01
+    - slime
+  state: 0
+algorithms_stochastic: ''
+default_steps:
+- ALL
+feature_steps:
+  ALL:
+    provides:
+    - nvarsOrig
+    - nclausesOrig
+    - nvars
+    - nclauses
+    - reducedVars
+    - reducedClauses
+    - vars-clauses-ratio
+    - POSNEG-RATIO-CLAUSE-mean
+    - POSNEG-RATIO-CLAUSE-coeff-variation
+    - POSNEG-RATIO-CLAUSE-min
+    - POSNEG-RATIO-CLAUSE-max
+    - POSNEG-RATIO-CLAUSE-entropy
+    - VCG-CLAUSE-mean
+    - VCG-CLAUSE-coeff-variation
+    - VCG-CLAUSE-min
+    - VCG-CLAUSE-max
+    - VCG-CLAUSE-entropy
+    - UNARY
+    - BINARY+
+    - TRINARY+
+    - VCG-VAR-mean
+    - VCG-VAR-coeff-variation
+    - VCG-VAR-min
+    - VCG-VAR-max
+    - VCG-VAR-entropy
+    - POSNEG-RATIO-VAR-mean
+    - POSNEG-RATIO-VAR-stdev
+    - POSNEG-RATIO-VAR-min
+    - POSNEG-RATIO-VAR-max
+    - POSNEG-RATIO-VAR-entropy
+    - HORNY-VAR-mean
+    - HORNY-VAR-coeff-variation
+    - HORNY-VAR-min
+    - HORNY-VAR-max
+    - HORNY-VAR-entropy
+    - horn-clauses-fraction
+    - VG-mean
+    - VG-coeff-variation
+    - VG-min
+    - VG-max
+    - CG-mean
+    - CG-coeff-variation
+    - CG-min
+    - CG-max
+    - CG-entropy
+    - cluster-coeff-mean
+    - cluster-coeff-coeff-variation
+    - cluster-coeff-min
+    - cluster-coeff-max
+    - cluster-coeff-entropy
+    - DIAMETER-mean
+    - DIAMETER-coeff-variation
+    - DIAMETER-min
+    - DIAMETER-max
+    - DIAMETER-entropy
+    - cl-num-mean
+    - cl-num-coeff-variation
+    - cl-num-min
+    - cl-num-max
+    - cl-num-q90
+    - cl-num-q10
+    - cl-num-q75
+    - cl-num-q25
+    - cl-num-q50
+    - cl-size-mean
+    - cl-size-coeff-variation
+    - cl-size-min
+    - cl-size-max
+    - cl-size-q90
+    - cl-size-q10
+    - cl-size-q75
+    - cl-size-q25
+    - cl-size-q50
+    - SP-bias-mean
+    - SP-bias-coeff-variation
+    - SP-bias-min
+    - SP-bias-max
+    - SP-bias-q90
+    - SP-bias-q10
+    - SP-bias-q75
+    - SP-bias-q25
+    - SP-bias-q50
+    - SP-unconstraint-mean
+    - SP-unconstraint-coeff-variation
+    - SP-unconstraint-min
+    - SP-unconstraint-max
+    - SP-unconstraint-q90
+    - SP-unconstraint-q10
+    - SP-unconstraint-q75
+    - SP-unconstraint-q25
+    - SP-unconstraint-q50
+    - vars-reduced-depth-1
+    - vars-reduced-depth-4
+    - vars-reduced-depth-16
+    - vars-reduced-depth-64
+    - vars-reduced-depth-256
+    - lobjois-mean-depth-over-vars
+    - lobjois-log-num-nodes-over-vars
+features_cutoff_memory: '?'
+features_cutoff_time: '?'
+features_deterministic:
+- nvarsOrig
+- nclausesOrig
+- nvars
+- nclauses
+- reducedVars
+- reducedClauses
+- vars-clauses-ratio
+- POSNEG-RATIO-CLAUSE-mean
+- POSNEG-RATIO-CLAUSE-coeff-variation
+- POSNEG-RATIO-CLAUSE-min
+- POSNEG-RATIO-CLAUSE-max
+- POSNEG-RATIO-CLAUSE-entropy
+- VCG-CLAUSE-mean
+- VCG-CLAUSE-coeff-variation
+- VCG-CLAUSE-min
+- VCG-CLAUSE-max
+- VCG-CLAUSE-entropy
+- UNARY
+- BINARY+
+- TRINARY+
+- VCG-VAR-mean
+- VCG-VAR-coeff-variation
+- VCG-VAR-min
+- VCG-VAR-max
+- VCG-VAR-entropy
+- POSNEG-RATIO-VAR-mean
+- POSNEG-RATIO-VAR-stdev
+- POSNEG-RATIO-VAR-min
+- POSNEG-RATIO-VAR-max
+- POSNEG-RATIO-VAR-entropy
+- HORNY-VAR-mean
+- HORNY-VAR-coeff-variation
+- HORNY-VAR-min
+- HORNY-VAR-max
+- HORNY-VAR-entropy
+- horn-clauses-fraction
+- VG-mean
+- VG-coeff-variation
+- VG-min
+- VG-max
+- CG-mean
+- CG-coeff-variation
+- CG-min
+- CG-max
+- CG-entropy
+- cluster-coeff-mean
+- cluster-coeff-coeff-variation
+- cluster-coeff-min
+- cluster-coeff-max
+- cluster-coeff-entropy
+- DIAMETER-mean
+- DIAMETER-coeff-variation
+- DIAMETER-min
+- DIAMETER-max
+- DIAMETER-entropy
+- cl-num-mean
+- cl-num-coeff-variation
+- cl-num-min
+- cl-num-max
+- cl-num-q90
+- cl-num-q10
+- cl-num-q75
+- cl-num-q25
+- cl-num-q50
+- cl-size-mean
+- cl-size-coeff-variation
+- cl-size-min
+- cl-size-max
+- cl-size-q90
+- cl-size-q10
+- cl-size-q75
+- cl-size-q25
+- cl-size-q50
+- SP-bias-mean
+- SP-bias-coeff-variation
+- SP-bias-min
+- SP-bias-max
+- SP-bias-q90
+- SP-bias-q10
+- SP-bias-q75
+- SP-bias-q25
+- SP-bias-q50
+- SP-unconstraint-mean
+- SP-unconstraint-coeff-variation
+- SP-unconstraint-min
+- SP-unconstraint-max
+- SP-unconstraint-q90
+- SP-unconstraint-q10
+- SP-unconstraint-q75
+- SP-unconstraint-q25
+- SP-unconstraint-q50
+- vars-reduced-depth-1
+- vars-reduced-depth-4
+- vars-reduced-depth-16
+- vars-reduced-depth-64
+- vars-reduced-depth-256
+- lobjois-mean-depth-over-vars
+- lobjois-log-num-nodes-over-vars
+features_stochastic: ''
+maximize:
+- false
+number_of_feature_steps: 1
+performance_measures:
+- runtime
+performance_type:
+- runtime
+scenario_id: data_test
